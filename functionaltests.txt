@@ -1,0 +1,25 @@
+1.	Do nothing, see that Speed is 0 and direction is forward.
+2.	Press BTN0, see that speed increases to 5.
+3.	Press on the middle-right of slider to see a slight right turn.
+4.	Wait a few seconds and see that LED1 comes on, indicating a direction violation.
+5.	Slide your finger on all other areas of the slider, testing all areas. The direction violation light should
+	remain off if you are switching directions quicker than a few seconds between switches. If you lift your finger
+	off the slider, the direction should not change from the last selected direction.
+	The below regions should be covered:
+		a. Hard Left
+		b. Slight Left
+		c. Forward
+		d. Slight Right
+		e. Hard Right
+6.	Wait a few seconds and again see the direction light come on.
+7.	Press BTN0 and BTN1 to increase and decrease the speed, it should increase by 5 when BTN0 is pushed,
+	and decrease by 5 when BTN1 is pushed, going down as far as '0' and going up as high as you want.
+8.	Increase the speed to '50' or above.
+9.	Move your finger to all regions of the slider. LED0 should be on whenever you are not going forward (any turns
+	over 45 are a speed violation) and off when you are going forward.  The same direction violation functionality should
+	work if you are going the same direction for more than a few seconds, regardless of speed violation.
+10.	Increase speed to above '75' and move your finger to all regions of the slider.  LED0 should be on regardless of 
+	direction (including forward) since 75 is the speed limit.  The same direction violation functionality should work if you 
+	are going the same direction for more than a few seconds, regardless of speed violation.
+11.	Decrease speed to 0, and see that both violation LEDs turn off.
+12.	Attempt to reduce the speed below 0, see that you cannot.
